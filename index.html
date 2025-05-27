@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Football Lineup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Add the Player</h1>
+
+  <div class="wrapper">
+    <!-- Responsive pitch -->
+    <div id="pitch"></div>
+
+    <!-- Inputs -->
+    <section class="container">
+      <div class="box-input">
+        <input type="text" id="neme" placeholder="Player Name" />
+        <input type="text" id="pos" placeholder="Position" />
+        <input type="text" id="num" placeholder="Jersey Number" />
+
+        <label for="image">Choose Player Image</label>
+        <input type="file" id="image" accept="image/*" />
+
+        <button type="button" onclick="addToLineUp()">Add</button>
+      </div>
+
+      <div id="show"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
