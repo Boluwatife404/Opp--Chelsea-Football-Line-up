@@ -42,7 +42,6 @@ h1 {
   position: relative;
 }
 
-/* Responsive player card */
 .player-card {
   position: absolute;
   width: 10%;
@@ -61,7 +60,7 @@ h1 {
   border: 2px solid white;
 }
 
-/* Input section */
+
 .container {
   width: 100%;
   display: flex;
@@ -108,11 +107,121 @@ label {
   font-size: 1rem;
 }
 
-/* Optional: Preview list of added players */
+
 #show {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
   gap: 20px;
+}
+
+.num {
+  font-size: 20px;
+  border: #003366;
+  border-radius: 10px;
+  padding: 5px;
+  width: 500px;
+  background-color: #0c0a02;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.seletor {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #0c0a02;
+  width: 500px;
+  border: #1c86ee;
+  color: #ffcc00;
+}
+
+.playername {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #0c0a02;
+  width: 500px;
+  border: #1c86ee;
+  color: #ffcc00;
+}
+
+
+
+
+.pitch-player {
+  position: absolute;
+  width: 10%;
+  max-width: 80px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.pitch-player img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+
+
+.player-info-card {
+  position: static; 
+  background-color: #004488;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 150px;
+}
+
+.player-info-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid white;
+  
+}
+
+#pitch {
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  background-image: url('/football.jpeg');
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 20%;
+}
+
+.pitch-player {
+  width: 60px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.pitch-player img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid white;
 }

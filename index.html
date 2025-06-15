@@ -11,26 +11,59 @@
   <h1>Add the Player</h1>
 
   <div class="wrapper">
-    <!-- Responsive pitch -->
     <div id="pitch"></div>
 
-    <!-- Inputs -->
-    <section class="container">
-      <div class="box-input">
-        <input type="text" id="neme" placeholder="Player Name" />
-        <input type="text" id="pos" placeholder="Position" />
-        <input type="text" id="num" placeholder="Jersey Number" />
+    <div class="box-input">
+      <select id="name" class="playername">
+        <option value="Pedro Neto">Pedro Neto – FW/Winger</option>
+        <option value="Cole Palmer">Cole Palmer – FW/CAM</option>
+        <option value="Noni Madueke">Noni Madueke – Winger</option>
+        <option value="Nicolas Jackson">Nicolas Jackson – Striker</option>
+        <option value="Moisés Caicedo">Moisés Caicedo – CM</option>
+        <option value="Enzo Fernández">Enzo Fernández – CM</option>
+        <option value="Marc Cucurella">Marc Cucurella – LB</option>
+        <option value="Reece James">Reece James – RB</option>
+        <option value="Tosin Adarabioyo">Tosin Adarabioyo – CB</option>
+        <option value="Robert Sánchez">Robert Sánchez – GK</option>
+        <option value="Trevoh Chalobah">Trevoh Chalobah – CB</option>
+        <option value="Roméo Lavia">Roméo Lavia – CM</option>
+        <option value="Christopher Nkunku">Christopher Nkunku – Forward</option>
+        <option value="Tyrique George">Tyrique George – Forward</option>
+      </select>
+      
 
-        <label for="image">Choose Player Image</label>
-        <input type="file" id="image" accept="image/*" />
+      <select id="pos" class="seletor">
+        <option value="">Select Position</option>
+        <option value="Goalkeeper">Goalkeeper</option>
+        <option value="Defender">Defender</option>
+        <option value="Midfielder">Midfielder</option>
+        <option value="Forward">Forward</option>
+        <option value="Central Midfielder">Central Midfielder</option>
+        <option value="Central Forward">Central Forward</option>
+      </select>
 
-        <button type="button" onclick="addToLineUp()">Add</button>
-      </div>
+      <select id="num" class="num">
+        <option value="">Jersey Number</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+      </select>
 
-      <div id="show"></div>
-    </section>
+      <label for="image">Choose Player Image</label>
+      <input type="file" id="image" accept="image/*" />
+
+      <button type="button" onclick="addToLineUp()">Add</button>
+    </div>
   </div>
-
+  <div id="show"></div>
   <script src="script.js"></script>
 </body>
 </html>
